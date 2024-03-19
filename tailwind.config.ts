@@ -9,10 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "header": "url('/backgrounds/header.png')",
+        "aboutus": "url('/backgrounds/aboutus.png')",
+        "features": "url('/backgrounds/features.png')",
+        "team": "url('/backgrounds/team.png')",
+        "faq": "url('/backgrounds/faq.png')",
+        "footer": "url('/backgrounds/footer.png')",
       },
+      boxShadow: {
+        '3xl': '10px 3px 30px -10px rgba(0, 0, 0)',
+      },
+      colors: {
+        "yellow": "#F5AA25",
+        "yellow-opacity": "#E0A336",
+        "red": "",
+        "red-opacity": ""
+      }
     },
   },
   plugins: [],
