@@ -22,8 +22,8 @@ const config: Config = {
       colors: {
         "yellow": "#F5AA25",
         "yellow-opacity": "#E0A336",
-        "red": "",
-        "red-opacity": ""
+        "red": "#EC6061",
+        "red-opacity": "#EC7879"
       }
     },
   },

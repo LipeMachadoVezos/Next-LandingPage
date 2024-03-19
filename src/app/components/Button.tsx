@@ -14,7 +14,7 @@ export function Button({ link, children, className }: ButtonProps) {
             <motion.a
                 href={link}
                 target="_blank"
-                className={twMerge("text-center text-white py-3 px-6 rounded mt-4 transition-colors", className)}
+                className={twMerge("text-center text-white py-3 px-6 rounded transition-colors", className)}
                 initial={{ opacity: 0, y: -100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -100 }}

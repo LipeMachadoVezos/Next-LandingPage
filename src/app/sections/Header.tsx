@@ -63,7 +63,7 @@ export function Header() {
                         />
                         <Button
                             link="/"
-                            className="bg-yellow hover:bg-yellow-opacity"
+                            className="bg-red hover:bg-red-opacity"
                         >
                             Fazer download gratuitamente
                         </Button>
