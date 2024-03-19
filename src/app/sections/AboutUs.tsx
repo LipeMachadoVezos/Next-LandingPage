@@ -18,7 +18,7 @@ export function AboutUs() {
                     <Image className="w-[60%] xl:w-[90%]" src="/ImageAboutus.png" width={600} height={0} alt="" />
                 </motion.div>
                 <div className="w-full flex justify-center xl:justify-start">
-                    <div className="w-full sm:w-[80%] lg:w-[70%] text-[#F1A632] px-6 xl:px-0">
+                    <div className="w-full sm:w-[80%] lg:w-[70%] text-yellow px-6 xl:px-0">
                         <motion.div
                             className="flex flex-col gap-8"
                             initial={{ opacity: 0, x: -100 }}
@@ -47,7 +47,7 @@ export function AboutUs() {
                             </h2>
                             <Button
                                 link="https://loja.vivereditora.com.br/produto/trilha-de-desenvolvimento-docente/"
-                                className="bg-[#F5AA25] hover:bg-[#E0A336]"
+                                className="bg-yellow hover:bg-yellow-opacity"
                             >
                                 Estou pronto para dar o próximo passo!
                             </Button>
