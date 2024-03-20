@@ -14,6 +14,7 @@ const config: Config = {
         "team": "url('/backgrounds/team.png')",
         "faq": "url('/backgrounds/faq.png')",
         "footer": "url('/backgrounds/footer.png')",
+        "imagefooter": "url('/ImageFooter.png')",
       },
       boxShadow: {
         '3xl': '10px 3px 30px -10px rgba(0, 0, 0)',

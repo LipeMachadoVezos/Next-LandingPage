@@ -46,7 +46,7 @@ export function AboutUs() {
                                 será deixado para o futuro.
                             </h2>
                             <Button
-                                link="https://loja.vivereditora.com.br/produto/trilha-de-desenvolvimento-docente/"
+                                link="https://loja.vivereditora.com.br/produto/next/"
                                 className="bg-yellow hover:bg-yellow-opacity"
                             >
                                 Estou pronto para dar o próximo passo!

@@ -28,7 +28,7 @@ export function Faq() {
                     ))}
                 </div>
                 <Button
-                    link="https://loja.vivereditora.com.br/produto/trilha-de-desenvolvimento-docente/"
+                    link="https://loja.vivereditora.com.br/produto/next/"
                     className="bg-red hover:bg-red-opacity"
                 >
                     Quero todos esses benefícios!
