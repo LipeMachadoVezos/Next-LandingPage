@@ -25,21 +25,21 @@ export function Header() {
                         exit={{ opacity: 0, x: -100 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        Um ambiente de trabalho harmônico, uma
+                        Um ambiente de trabalho harmônico, uma{" "}
                         <br className="hidden md:block" />
-                        equipe unida e dando o máximo de si: com o
+                        equipe unida e dando o máximo de si: com o{" "}
                         <br className="hidden md:block" />
                         Next, isso pode ser realidade!
                     </motion.h1>
                     <div className="flex flex-col gap-4">
                         <motion.h2
-                            className="text-white text-2xl"
+                            className="text-white text-lg"
                             initial={{ opacity: 0, x: -100 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -100 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            Confira um trecho do nosso material.
+                            Confira um trecho do nosso material.{" "}
                             <br />
                             Baixe agora mesmo uma amostra do nosso material
                         </motion.h2>
