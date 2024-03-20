@@ -13,7 +13,7 @@ export function Card({ icon, title, text }: CardProps) {
     return (
         <>
             <motion.div
-                className="w-full md:w-[430px] bg-[#88BDD0] rounded px-8 py-8 relative text-white flex flex-col items-start gap-3"
+                className="w-full md:w-[430px] bg-[#88BDD0] border-white border-2 rounded px-8 py-8 relative text-white flex flex-col items-start gap-3"
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 100 }}
