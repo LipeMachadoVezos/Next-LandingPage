@@ -39,7 +39,7 @@ export function Header() {
                             exit={{ opacity: 0, x: -100 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            Confira um trecho do nosso material.{" "}
+                            Confira um trecho do nosso material por dentro!{" "}
                             <br />
                             Baixe agora mesmo uma amostra do nosso material
                         </motion.h2>
