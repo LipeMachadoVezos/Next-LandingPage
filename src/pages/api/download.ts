@@ -21,21 +21,30 @@ export default async function subscribeHandler(
     return res.status(400).json({ error: "Coloque um email válido!" });
   }
 
-  // 2. Retrieve Mailchimp credentials from environment variables
+  // 2. Validate first name
+  const firstNameValidation = z.string().nonempty().safeParse(req.body.name);
+  if (!firstNameValidation.success) {
+    return res.status(400).json({ error: "O campo 'first name' é obrigatório!" });
+  }
+
+  // 3. Retrieve Mailchimp credentials from environment variables
   const API_KEY = process.env.MAILCHIMP_API_KEY;
   const API_SERVER = process.env.MAILCHIMP_API_SERVER;
   const AUDIENCE_ID = process.env.MAILCHIMP_AUDIENCE_ID;
 
-  // 3. Construct Mailchimp API request URL
+  // 4. Construct Mailchimp API request URL
   const url = `https://${API_SERVER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`;
 
-  // 4. Prepare request data
+  // 5. Prepare request data
   const data = {
     email_address: emailValidation.data,
     status: "subscribed",
+    merge_fields: {
+      FNAME: firstNameValidation.data
+    }
   };
 
-  // 5. Set request headers
+  // 6. Set request headers
   const options = {
     headers: {
       "Content-Type": "application/json",
@@ -43,7 +52,7 @@ export default async function subscribeHandler(
     },
   };
 
-  // 6. Send POST request to Mailchimp API
+  // 7. Send POST request to Mailchimp API
   try {
     const response = await axios.post(url, data, options);
     if (response.status == 200) {

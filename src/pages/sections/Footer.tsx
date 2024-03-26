@@ -32,7 +32,7 @@ export function Footer() {
                             link=""
                             className="bg-yellow hover:bg-yellow-opacity px-12 lg:px-[80px]"
                         >
-                            E-email
+                            E-mail
                         </Button>
                     </div>
                 </div>
