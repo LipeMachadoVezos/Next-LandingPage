@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { IconArticles } from "../../../public/IconArticles";
+import { IconArticles } from "../..//public/IconArticles"
 
 interface ArticlesProps {
     title: string;

@@ -1,10 +1,10 @@
 "use client"
 
-import { Button } from "../components/Button";
+import { Button } from "../../components/Button";
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Articles } from "../components/Articles";
-import { faqData } from "../data/faq";
+import { Articles } from "../../components/Articles";
+import { faqData } from "../../data/faq";
 
 export function Faq() {
     return (

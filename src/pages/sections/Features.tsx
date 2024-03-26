@@ -1,9 +1,9 @@
 "use client"
 
-import { Button } from "../components/Button";
+import { Button } from "../../components/Button";
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Card } from "../components/Card";
+import { Card } from "../../components/Card";
 
 export function Features() {
     return (
